@@ -40,13 +40,14 @@ All flags default to `chemsae/config.py`; override on the CLI
 ```
 chemsae/      package
 scripts/      numbered run scripts
-paper/        paper.md, paper.docx
+data/         cached canonical SMILES
 results/      figures/, tables/, per-layer label CSV/JSON, RESULTS.md
 ```
 
-`data/`, `activations/`, `checkpoints/`, and the big `results/z_*.pt`
-encoded tensors are gitignored. They regenerate from scripts 01-02
-(plus 03 if you want the encoded tensors back).
+`activations/`, `checkpoints/`, and the big `results/z_*.pt` encoded
+tensors are gitignored. They regenerate from scripts 01-02 (plus 03 if
+you want the encoded tensors back). The manuscript itself is not part of
+this reproducibility repository.
 
 ## What the SAE does
 
