@@ -1,0 +1,4 @@
+layer,n_features_analyzed,n_labeled,frac_labeled,median_precision,median_lift,unique_concepts
+2,200,200,1.0,1.0,1.495262379198539,26
+4,200,200,1.0,1.0,1.596220150683182,28
+6,200,200,1.0,1.0,1.573960399156357,28

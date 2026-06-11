@@ -1,0 +1,42 @@
+# Paper (kept out of the reproducibility repo)
+paper/
+
+# Large, regenerable artifacts (recreate with scripts/01-03)
+# - activations/ : 14 GB of cached ChemBERTa activations
+# - checkpoints/ : SAE weights, regenerate with scripts/02
+# - results/z_*.pt : multi-GB encoded-feature tensors (scripts/03)
+activations/
+checkpoints/
+results/z_*.pt
+*.safetensors
+
+# Kept on purpose (NOT ignored): data/, results/figures, results/tables,
+# results/layer_*/, results/*.md, results/*.csv, chemsae/, scripts/, README,
+# requirements.txt, pyproject.toml -- everything needed to reproduce.
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs / notebooks
+*.log
+runs/
+wandb/
+.ipynb_checkpoints/
